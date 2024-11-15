@@ -4,7 +4,8 @@
   --yellow: #fcb72b;
   --light-yellow: #fff4df;
   --blue: #495567;
-  --dark-grey: #939caa;
+  --dark-grey: #333a44;
+  --grey: #939caa;
   --light-grey: #e5ecf4;
   --snow: #f2f5f9;
 
@@ -58,34 +59,129 @@ body {
   font-size: var(--body-size);
 }
 
-h1 {
-  font-family: var(--lexend-deca);
-  font-size: var(--title-xxl);
-  line-height: var(--line-height-xl);
-  font-weight: var(--bold);
-  letter-spacing: -2.5px;
+/*main*/
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 375px;
+  height: 64px;
+  padding: 24px 32px;
 }
 
-h2 {
-  font-family: var(--lexend-deca);
-  font-size: var(--title-xl);
-  line-height: var(--line-height-l);
-  font-weight: var(--bold);
-  letter-spacing: -2.14px;
+.hamburger {
+  width: 20px;
+  height: 16px;
 }
 
-h3 {
-  font-family: var(--lexend-deca);
+.close {
+  display: none;
+  width: 20px;
+  height: 16px;
+}
+
+.logo {
+  width: 76px;
+  height: 20px;
+  justify-self: center;
+}
+
+.menu {
+  position: absolute;
+  top: 64px;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 24px;
+  height: 603px;
+  width: 375px;
+  padding: 64px 32px 24px 32px;
+  background-image: linear-gradient(
+    to right,
+    var(--dark-grey) 256px,
+    rgba(0, 0, 0, 0.75) 256px 375px
+  );
+  translate: -100%;
+  transition: translate 0.3s;
+  z-index: 1;
+}
+
+.menu-show {
+  translate: 0;
+}
+
+.menu-link {
+  font-family: var(--space-mono);
+  font-weight: var(--bold);
+  font-size: 18px;
+  line-height: var(--line-height-s);
+  color: var(--light-grey);
+}
+
+.button {
+  display: inline-block;
+  width: 180px;
+  height: 53px;
+  padding: 14px;
+  text-align: center;
+  font-family: var(--space-mono);
+  font-size: var(--body-size);
+  line-height: var(--line-height-s);
+  color: white;
+  background-color: #fcb72b;
+}
+
+.menu-button {
+  margin-top: 310px;
+  width: 192px;
+}
+
+/*main*/
+
+.main {
+  width: 375px;
+}
+
+.presentation {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 115px 32px;
+  height: 650px;
+  width: 375px;
+  padding-top: 115px;
+  color: #fff;
+  background-image: url(../assets/images/home-hero-mobile.jpg);
+  background-size: cover;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.presentation-header {
+  font-family: var(--space-mono);
   font-size: var(--title-l);
-  line-height: var(--line-height-l);
+  text-align: center;
+  line-height: var(--title-l);
+  letter-spacing: -2px;
   font-weight: var(--bold);
-  letter-spacing: -1.79px;
+  margin: 0;
 }
 
-h4 {
+.presentation-text {
   font-family: var(--lexend-deca);
-  font-size: var(--title-m);
-  line-height: var(--line-height-m);
-  font-weight: var(--bold);
-  letter-spacing: -1px;
+  font-size: var(--body-size);
+  text-align: center;
+  line-height: var(--line-height-s);
+  font-weight: var(--regular);
+  margin-bottom: 34px;
+}
+
+.presentation-arrow {
+  position: absolute;
+  top: 478px;
+  left: -250px;
 }
