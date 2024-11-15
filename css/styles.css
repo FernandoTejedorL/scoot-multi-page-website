@@ -1,5 +1,28 @@
+/*Jugar con el max-height y max-width -- Desktop 1024px*/
+
 :root {
-  --bg-color: blue;
+  --yellow: #fcb72b;
+  --light-yellow: #fff4df;
+  --blue: #495567;
+  --dark-grey: #939caa;
+  --light-grey: #e5ecf4;
+  --snow: #f2f5f9;
+
+  --space-mono: 'Space mono', monospace;
+  --lexend-deca: 'Lexend deca', 'sans-serif';
+  --bold: 700;
+  --regular: 400;
+
+  --body-size: 15px;
+  --title-m: 24px;
+  --title-l: 40px;
+  --title-xl: 48px;
+  --title-xxl: 56px;
+
+  --line-height-s: 25px;
+  --line-height-m: 28px;
+  --line-height-l: 48px;
+  --line-height-xl: 56px;
 }
 
 * {
@@ -29,5 +52,40 @@ ul {
 
 body {
   margin: 0;
-  font-family: sans-serif;
+  font-family: var(--lexend-deca);
+  font-weight: var(--regular);
+  line-height: var(--line-height-s);
+  font-size: var(--body-size);
+}
+
+h1 {
+  font-family: var(--lexend-deca);
+  font-size: var(--title-xxl);
+  line-height: var(--line-height-xl);
+  font-weight: var(--bold);
+  letter-spacing: -2.5px;
+}
+
+h2 {
+  font-family: var(--lexend-deca);
+  font-size: var(--title-xl);
+  line-height: var(--line-height-l);
+  font-weight: var(--bold);
+  letter-spacing: -2.14px;
+}
+
+h3 {
+  font-family: var(--lexend-deca);
+  font-size: var(--title-l);
+  line-height: var(--line-height-l);
+  font-weight: var(--bold);
+  letter-spacing: -1.79px;
+}
+
+h4 {
+  font-family: var(--lexend-deca);
+  font-size: var(--title-m);
+  line-height: var(--line-height-m);
+  font-weight: var(--bold);
+  letter-spacing: -1px;
 }
