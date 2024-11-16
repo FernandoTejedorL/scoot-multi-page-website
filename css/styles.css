@@ -386,3 +386,98 @@ body {
   align-items: center;
   width: 120px;
 }
+
+/*ABOUT PAGE*/
+
+.about-top {
+  width: 375px;
+  height: 160px;
+  background-image: url(../assets/images/about-hero-mobile.jpg);
+  padding: 60px 32px;
+  text-align: center;
+}
+
+.top-header {
+  font-family: var(--space-mono);
+  font-weight: var(--bold);
+  color: #fff;
+  font-size: var(--title-l);
+  line-height: 40px;
+  letter-spacing: -1.78px;
+  margin: 0;
+}
+
+.description-about {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 1438px;
+  padding: 72px 32px;
+  overflow: hidden;
+}
+
+.description-digital-arrow {
+  position: absolute;
+  max-width: 734px;
+  left: 32px;
+  top: 200px;
+}
+
+.description-better-arrow {
+  position: absolute;
+  max-width: 734px;
+  left: -105px;
+  top: 760px;
+}
+
+.about-text-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 311px;
+  height: 196px;
+}
+
+.values {
+  height: 1800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 32px;
+}
+
+.values-box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 459px;
+  width: 311px;
+}
+
+.values-img {
+  height: 240px;
+  width: 240px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.values-number {
+  position: absolute;
+  top: 190px;
+  height: 96px;
+  width: 96px;
+  border-radius: 50%;
+  background-color: var(--yellow);
+  padding: 34px 34px;
+  font-family: var(--space-mono);
+  font-weight: var(--bold);
+  font-size: var(--title-m);
+  line-height: var(--line-height-m);
+  letter-spacing: -1px;
+}
