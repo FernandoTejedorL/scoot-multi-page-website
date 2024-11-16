@@ -15,13 +15,16 @@
   --regular: 400;
 
   --body-size: 15px;
+  --title-s: 20px;
   --title-m: 24px;
+  --title-ml: 32px;
   --title-l: 40px;
   --title-xl: 48px;
   --title-xxl: 56px;
 
   --line-height-s: 25px;
   --line-height-m: 28px;
+  --line-height-ml: 32px;
   --line-height-l: 48px;
   --line-height-xl: 56px;
 }
@@ -144,6 +147,8 @@ body {
   width: 375px;
 }
 
+/*first card*/
+
 .presentation {
   position: relative;
   display: flex;
@@ -184,4 +189,200 @@ body {
   position: absolute;
   top: 478px;
   left: -250px;
+}
+
+/*Second card*/
+
+.explanation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 1032px;
+  width: 375px;
+  padding: 120px 32px;
+}
+
+.explanation-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 232px;
+  width: 311px;
+}
+
+.explanation-icon {
+  height: 56px;
+  width: 56px;
+}
+
+.explanation-header {
+  font-family: var(--space-mono);
+  font-size: var(--title-s);
+  line-height: var(--line-height-s);
+  font-weight: var(--regular);
+  color: var(--blue);
+  margin: 0;
+}
+
+.explanation-text {
+  font-family: var(--lexend-deca);
+  font-size: var(--body-size);
+  line-height: var(--line-height-s);
+  font-weight: var(--regular);
+  color: var(--grey);
+  text-align: center;
+}
+
+/*description card*/
+
+.description {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 56px;
+  justify-content: space-between;
+  padding-inline: 32px;
+  width: 375px;
+  overflow: hidden;
+  margin-bottom: 120px;
+}
+
+.description-pic {
+  height: 311px;
+  width: 311px;
+  border-radius: 50%;
+}
+
+.description-easy-arrow {
+  position: absolute;
+  max-width: 734px;
+  left: 32px;
+  top: 173px;
+}
+
+.description-coming-arrow {
+  position: absolute;
+  max-width: 734px;
+  left: -180px;
+  top: 750px;
+}
+
+.description-zero-arrow {
+  position: absolute;
+  max-width: 734px;
+  left: 125px;
+  top: 1503px;
+}
+
+.description-text-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 311px;
+  height: 331px;
+}
+
+.description-text-header {
+  text-align: center;
+  font-family: var(--space-mono);
+  font-weight: var(--bold);
+  font-size: var(--title-ml);
+  line-height: var(--line-height-ml);
+  letter-spacing: -1.43px;
+  color: var(--blue);
+  margin: 0;
+}
+
+.description-text-text {
+  text-align: center;
+  font-family: var(--lexend-deca);
+  font-weight: var(--regular);
+  font-size: var(--body-size);
+  line-height: var(--line-height-s);
+  color: var(--grey);
+}
+
+/*footer*/
+.footer {
+  display: flex;
+  flex-direction: column;
+  width: 375px;
+  background-color: var(--blue);
+}
+
+.footer-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 320px;
+  background-image: url(../assets/patterns/semi-circles.svg);
+  background-repeat: no-repeat;
+  background-position: -607px bottom;
+  padding: 88px 32px;
+}
+
+.footer-text-header {
+  text-align: center;
+  font-family: var(--space-mono);
+  font-weight: var(--bold);
+  font-size: var(--title-ml);
+  line-height: var(--line-height-ml);
+  letter-spacing: -1.43px;
+  color: white;
+  margin: 0;
+}
+
+.stores {
+  display: flex;
+  justify-content: space-between;
+  width: 256px;
+}
+
+.app-store {
+  width: 114px;
+  height: 40px;
+}
+
+.google-play {
+  width: 130px;
+  height: 40px;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 438px;
+  padding: 64px 128px;
+  background-color: var(--dark-grey);
+}
+
+.footer-links-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 74px;
+  height: 107px;
+}
+
+.footer-link {
+  font-family: var(--space-mono);
+  font-weight: var(--bold);
+  font-size: 15px;
+  line-height: var(--line-height-s);
+  color: var(--grey);
+}
+
+.social-media {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 120px;
 }
