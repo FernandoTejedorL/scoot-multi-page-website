@@ -441,11 +441,13 @@ body {
   height: 196px;
 }
 
+/*Values*/
+
 .values {
   height: 1800px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 64px;
   align-items: center;
   padding-inline: 32px;
 }
@@ -455,16 +457,15 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
   height: 459px;
   width: 311px;
 }
 
-.values-img {
+.img {
   height: 240px;
   width: 240px;
   border-radius: 50%;
-  overflow: hidden;
+  margin-bottom: 64px;
 }
 
 .values-number {
@@ -480,4 +481,77 @@ body {
   font-size: var(--title-m);
   line-height: var(--line-height-m);
   letter-spacing: -1px;
+}
+
+.values-header {
+  font-family: var(--space-mono);
+  font-weight: var(--bold);
+  font-size: var(--title-m);
+  line-height: var(--line-height-m);
+  letter-spacing: -1px;
+  margin: 0;
+}
+
+.values-txt {
+  font-family: var(--lexend-deca);
+  font-size: var(--body-size);
+  text-align: center;
+  line-height: var(--line-height-s);
+  font-weight: var(--regular);
+}
+
+/*FAQs*/
+
+.faqs {
+  width: 311px;
+  margin-left: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.faqs-header-two {
+  font-family: var(--space-mono);
+  font-weight: var(--bold);
+  font-size: var(--title-m);
+  line-height: var(--line-height-m);
+  color: var(--blue);
+  text-align: center;
+  letter-spacing: -1px;
+}
+
+.accordion-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 112px;
+  padding: 32px;
+  background-color: var(--snow);
+}
+
+.accordion-header {
+  font-family: var(--space-mono);
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -1px;
+  color: var(--blue);
+  text-align: left;
+  margin: 0;
+}
+
+.accordion-arrow {
+  width: 16px;
+  height: 8px;
+  transform: rotate(180deg);
+}
+
+.accordion-text {
+  font-family: var(--lexend-deca);
+  font-size: var(--body-size);
+  text-align: left;
+  padding: 32px 0 28px 32px;
+  line-height: var(--line-height-s);
+  font-weight: var(--regular);
+  background-color: var(--snow);
+  margin: 0;
 }
