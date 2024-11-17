@@ -73,9 +73,24 @@ body {
   padding: 24px 32px;
 }
 
+@media screen and (width>768px) {
+  .header {
+    justify-content: flex-start;
+    height: 96px;
+    width: 768px;
+    padding: 40px 22px;
+  }
+}
+
 .hamburger {
   width: 20px;
   height: 16px;
+}
+
+@media screen and (width>768px) {
+  .hamburger {
+    display: none;
+  }
 }
 
 .close {
@@ -84,10 +99,24 @@ body {
   height: 16px;
 }
 
+@media screen and (width>768px) {
+  .close {
+    display: none;
+  }
+}
+
 .logo {
   width: 76px;
   height: 20px;
   justify-self: center;
+}
+
+@media screen and (width>768px) {
+  .logo {
+    height: 29px;
+    width: 108px;
+    justify-self: flex-start;
+  }
 }
 
 .menu {
@@ -111,6 +140,21 @@ body {
   z-index: 1;
 }
 
+@media screen and (width>768px) {
+  .menu {
+    flex-direction: row;
+    align-items: center;
+    translate: 0;
+    position: static;
+    height: 96px;
+    width: 563px;
+    padding: 36px;
+    background-image: none;
+    translate: 0;
+    z-index: 1;
+  }
+}
+
 .menu-show {
   translate: 0;
 }
@@ -120,7 +164,7 @@ body {
   font-weight: var(--bold);
   font-size: 18px;
   line-height: var(--line-height-s);
-  color: var(--light-grey);
+  color: var(--grey);
 }
 
 .button {
@@ -141,10 +185,23 @@ body {
   width: 192px;
 }
 
+@media screen and (width>768px) {
+  .menu-button {
+    margin-top: 0;
+    margin-left: 94px;
+  }
+}
+
 /*main*/
 
 .main {
   width: 375px;
+}
+
+@media screen and (width>768px) {
+  .main {
+    width: 768px;
+  }
 }
 
 /*first card*/
@@ -157,13 +214,41 @@ body {
   align-items: center;
   padding: 115px 32px;
   height: 650px;
-  width: 375px;
-  padding-top: 115px;
   color: #fff;
   background-image: url(../assets/images/home-hero-mobile.jpg);
   background-size: cover;
   overflow: hidden;
   z-index: 0;
+}
+
+@media screen and (width>768px) {
+  .presentation {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 137px 97px;
+    height: 650px;
+    color: #fff;
+    background-image: url(../assets/images/home-hero-tablet.jpg);
+    background-size: cover;
+    overflow: hidden;
+    z-index: 0;
+  }
+}
+
+.circles-header {
+  scale: 0;
+}
+
+@media screen and (width>768px) {
+  .circles-header {
+    scale: 1;
+    position: absolute;
+    top: 540px;
+    right: -31px;
+  }
 }
 
 .presentation-header {
@@ -174,6 +259,16 @@ body {
   letter-spacing: -2px;
   font-weight: var(--bold);
   margin: 0;
+}
+
+@media screen and (width>768px) {
+  .presentation-header {
+    font-size: var(--title-xxl);
+    text-align: center;
+    line-height: var(--title-xl);
+    letter-spacing: -2, 5px;
+    font-weight: var(--bold);
+  }
 }
 
 .presentation-text {
@@ -191,6 +286,13 @@ body {
   left: -250px;
 }
 
+@media screen and (width>768px) {
+  .presentation-arrow {
+    top: 473px;
+    left: -140px;
+  }
+}
+
 /*Second card*/
 
 .explanation {
@@ -198,9 +300,18 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  height: 1032px;
   width: 375px;
+  gap: 48px;
   padding: 120px 32px;
+}
+
+@media screen and (width>768px) {
+  .explanation {
+    width: 768px;
+    padding: 122px 98px;
+    background-image: linear-gradient(to top, #ffffff 200px, transparent 200px),
+      linear-gradient(to right, #fff 140px, var(--snow) 140px 155px, #fff 155px);
+  }
 }
 
 .explanation-card {
@@ -212,9 +323,26 @@ body {
   width: 311px;
 }
 
+@media screen and (width>768px) {
+  .explanation-card {
+    flex-direction: row;
+    align-items: flex-start;
+    width: 573px;
+    height: 130px;
+    gap: 79px;
+  }
+}
+
 .explanation-icon {
   height: 56px;
   width: 56px;
+}
+
+@media screen and (width>768px) {
+  .explanation-icon {
+    height: 96px;
+    width: 96px;
+  }
 }
 
 .explanation-header {
@@ -224,6 +352,17 @@ body {
   font-weight: var(--regular);
   color: var(--blue);
   margin: 0;
+  text-align: center;
+}
+
+@media screen and (width>768px) {
+  .explanation-header {
+    font-size: var(--title-m);
+    line-height: var(--line-height-m);
+    font-weight: var(--bold);
+    text-align: left;
+    letter-spacing: -1px;
+  }
 }
 
 .explanation-text {
@@ -233,6 +372,12 @@ body {
   font-weight: var(--regular);
   color: var(--grey);
   text-align: center;
+}
+
+@media screen and (width>768px) {
+  .explanation-text {
+    text-align: left;
+  }
 }
 
 /*description card*/
@@ -250,10 +395,38 @@ body {
   margin-bottom: 120px;
 }
 
+@media screen and (width>768px) {
+  .description {
+    width: 768px;
+  }
+}
+
+@media screen and (width>768px) {
+  .description-easy-box {
+    display: flex;
+    justify-content: center;
+    width: 768px;
+    background-image: radial-gradient(
+      circle at center right,
+      var(--snow) 220px,
+      transparent 220px
+    );
+    background-position: 140px;
+    background-repeat: no-repeat;
+  }
+}
+
 .description-pic {
   height: 311px;
   width: 311px;
   border-radius: 50%;
+}
+
+@media screen and (width>768px) {
+  .description-pic {
+    height: 445px;
+    width: 445px;
+  }
 }
 
 .description-easy-arrow {
@@ -263,11 +436,39 @@ body {
   top: 173px;
 }
 
+@media screen and (width>768px) {
+  .description-easy-arrow {
+    top: 300px;
+  }
+}
+
 .description-coming-arrow {
   position: absolute;
   max-width: 734px;
   left: -180px;
   top: 750px;
+}
+
+@media screen and (width>768px) {
+  .description-coming-arrow {
+    top: 900px;
+    left: -100px;
+  }
+}
+
+@media screen and (width>768px) {
+  .description-coming-box {
+    display: flex;
+    justify-content: center;
+    width: 768px;
+    background-image: radial-gradient(
+      circle at center left,
+      var(--snow) 220px,
+      transparent 220px
+    );
+    background-position: -140px;
+    background-repeat: no-repeat;
+  }
 }
 
 .description-zero-arrow {
@@ -277,6 +478,13 @@ body {
   top: 1503px;
 }
 
+@media screen and (width>768px) {
+  .description-zero-arrow {
+    top: 1900px;
+    left: 400px;
+  }
+}
+
 .description-text-box {
   display: flex;
   flex-direction: column;
@@ -284,6 +492,14 @@ body {
   align-items: center;
   width: 311px;
   height: 331px;
+}
+
+@media screen and (width>768px) {
+  .description-text-box {
+    height: 304px;
+    width: 573px;
+    margin-bottom: 50px;
+  }
 }
 
 .description-text-header {
@@ -297,6 +513,20 @@ body {
   margin: 0;
 }
 
+@media screen and (width>768px) {
+  .description-text-header {
+    text-align: center;
+    font-family: var(--space-mono);
+    font-weight: var(--bold);
+    font-size: var(--title-xl);
+    line-height: var(--line-height-l);
+    letter-spacing: -2.14px;
+    color: var(--blue);
+    margin: 0;
+    width: 457px;
+  }
+}
+
 .description-text-text {
   text-align: center;
   font-family: var(--lexend-deca);
@@ -306,12 +536,24 @@ body {
   color: var(--grey);
 }
 
+@media screen and (width>768px) {
+  .description-text-text {
+    width: 573px;
+  }
+}
+
 /*footer*/
 .footer {
   display: flex;
   flex-direction: column;
   width: 375px;
   background-color: var(--blue);
+}
+
+@media screen and (width>768px) {
+  .footer {
+    width: 768px;
+  }
 }
 
 .footer-top {
@@ -326,6 +568,16 @@ body {
   padding: 88px 32px;
 }
 
+@media screen and (width>768px) {
+  .footer-top {
+    height: 300px;
+    background-image: url(../assets/patterns/semi-circles.svg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    padding: 62px 155px;
+  }
+}
+
 .footer-text-header {
   text-align: center;
   font-family: var(--space-mono);
@@ -335,6 +587,14 @@ body {
   letter-spacing: -1.43px;
   color: white;
   margin: 0;
+}
+
+@media screen and (width>768px) {
+  .footer-text-header {
+    font-size: var(--title-xl);
+    line-height: var(--line-height-xl);
+    letter-spacing: -2px;
+  }
 }
 
 .stores {
@@ -363,6 +623,16 @@ body {
   background-color: var(--dark-grey);
 }
 
+@media screen and (width>768px) {
+  .footer-bottom {
+    flex-direction: row;
+    height: 96px;
+    justify-content: flex-start;
+    padding: 39px 35px;
+    gap: 59px;
+  }
+}
+
 .footer-links-container {
   display: flex;
   flex-direction: column;
@@ -370,6 +640,13 @@ body {
   align-items: center;
   width: 74px;
   height: 107px;
+}
+
+@media screen and (width>768px) {
+  .footer-links-container {
+    flex-direction: row;
+    width: 249px;
+  }
 }
 
 .footer-link {
@@ -387,14 +664,29 @@ body {
   width: 120px;
 }
 
+@media screen and (width>768px) {
+  .social-media {
+    margin-left: 153px;
+  }
+}
+
 /*ABOUT PAGE*/
 
 .about-top {
-  width: 375px;
+  position: relative;
   height: 160px;
   background-image: url(../assets/images/about-hero-mobile.jpg);
   padding: 60px 32px;
   text-align: center;
+}
+
+@media screen and (width>768px) {
+  .about-top {
+    height: 200px;
+    background-image: url(../assets/images/about-hero-tablet.jpg);
+    padding: 72px 97px;
+    text-align: left;
+  }
 }
 
 .top-header {
@@ -407,15 +699,66 @@ body {
   margin: 0;
 }
 
+@media screen and (width>768px) {
+  .top-header {
+    font-size: var(--title-xl);
+    line-height: var(--line-height-xl);
+    letter-spacing: -2.5px;
+  }
+}
+
+.circles-header-pages {
+  scale: 0;
+}
+
+@media screen and (width>768px) {
+  .circles-header-pages {
+    scale: 1;
+    position: absolute;
+    top: 70px;
+    right: -30px;
+  }
+}
+
 .description-about {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  height: 1438px;
   padding: 72px 32px;
   overflow: hidden;
+}
+
+@media screen and (width>768px) {
+  .description-box-digital {
+    display: flex;
+    justify-content: center;
+    width: 768px;
+    background-image: radial-gradient(
+      circle at center right,
+      var(--snow) 220px,
+      transparent 220px
+    );
+    background-position: 140px;
+    background-repeat: no-repeat;
+    margin-bottom: 56px;
+  }
+}
+
+@media screen and (width>768px) {
+  .description-box-better {
+    display: flex;
+    justify-content: center;
+    width: 768px;
+    background-image: radial-gradient(
+      circle at center left,
+      var(--snow) 220px,
+      transparent 220px
+    );
+    background-position: -140px;
+    background-repeat: no-repeat;
+  }
 }
 
 .description-digital-arrow {
@@ -425,11 +768,24 @@ body {
   top: 200px;
 }
 
+@media screen and (width>768px) {
+  .description-digital-arrow {
+    top: 330px;
+    max-width: 768px;
+  }
+}
+
 .description-better-arrow {
   position: absolute;
   max-width: 734px;
   left: -105px;
-  top: 760px;
+  top: 730px;
+}
+
+@media screen and (width>768px) {
+  .description-better-arrow {
+    top: 930px;
+  }
 }
 
 .about-text-box {
@@ -439,17 +795,19 @@ body {
   align-items: center;
   width: 311px;
   height: 196px;
+  margin-top: 56px;
+  margin-bottom: 100px;
 }
 
 /*Values*/
 
 .values {
-  height: 1800px;
   display: flex;
   flex-direction: column;
   gap: 64px;
   align-items: center;
   padding-inline: 32px;
+  margin-bottom: 135px;
 }
 
 .values-box {
@@ -500,14 +858,40 @@ body {
   font-weight: var(--regular);
 }
 
+@media screen and (width>768px) {
+  .values-txt {
+    width: 457px;
+  }
+}
+
 /*FAQs*/
 
 .faqs {
-  width: 311px;
-  margin-left: 32px;
+  margin-inline: 39px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-content: center;
+  margin-bottom: 90px;
+}
+
+.description-faqs-header {
+  text-align: center;
+  font-family: var(--space-mono);
+  font-weight: var(--bold);
+  font-size: var(--title-ml);
+  line-height: var(--line-height-ml);
+  letter-spacing: -1.43px;
+  color: var(--blue);
+  margin: 0;
+}
+
+@media screen and (width>768px) {
+  .description-faqs-header {
+    font-size: var(--title-xl);
+    line-height: var(--line-height-xl);
+    letter-spacing: -2.14px;
+  }
 }
 
 .faqs-header-two {
@@ -518,6 +902,26 @@ body {
   color: var(--blue);
   text-align: center;
   letter-spacing: -1px;
+}
+
+@media screen and (width>768px) {
+  .faqs-header-two {
+    font-size: var(--title-l);
+    line-height: var(--line-height-l);
+    letter-spacing: -1.79px;
+  }
+}
+
+.faqs-container faqs-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.individual-accordion-box {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
 }
 
 .accordion-box {
@@ -537,6 +941,15 @@ body {
   color: var(--blue);
   text-align: left;
   margin: 0;
+  width: 219px;
+}
+
+@media screen and (width>768px) {
+  .accordion-header {
+    font-size: var(--title-m);
+    line-height: var(--line-height-m);
+    width: 470px;
+  }
 }
 
 .accordion-arrow {
@@ -545,13 +958,152 @@ body {
   transform: rotate(180deg);
 }
 
+.arrow-turn {
+  transform: rotate(360deg);
+}
+
 .accordion-text {
   font-family: var(--lexend-deca);
   font-size: var(--body-size);
   text-align: left;
-  padding: 32px 0 28px 32px;
+  padding: 0 32px 28px 32px;
   line-height: var(--line-height-s);
   font-weight: var(--regular);
   background-color: var(--snow);
   margin: 0;
+  scale: 1;
+}
+
+.accordion-hide {
+  display: none;
+}
+
+/*careers*/
+
+.careers-top {
+  width: 375px;
+  height: 160px;
+  background-image: url(../assets/images/careers-location-hero-mobile.jpg);
+  padding: 60px 32px;
+  text-align: center;
+}
+
+.careers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 890px;
+}
+
+.description-careers-about {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 72px 32px;
+  overflow: hidden;
+}
+
+.description-careers {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 72px 32px;
+  overflow: hidden;
+}
+
+.description-careers-arrow {
+  position: absolute;
+  max-width: 734px;
+  left: 32px;
+  top: 235px;
+}
+
+.values-careers {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  align-items: center;
+  padding-inline: 32px;
+  margin-bottom: 142px;
+}
+
+.description-careers-text-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 311px;
+  height: 331px;
+}
+
+.positions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  height: 1220px;
+  width: 311px;
+  margin-inline: auto;
+  margin-bottom: 120px;
+}
+
+.each-position {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px;
+  width: 311px;
+  height: 190px;
+  background-color: var(--snow);
+}
+
+.role {
+  font-family: var(--space-mono);
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -1px;
+  color: var(--blue);
+  margin: 0;
+}
+
+.role-locations {
+  font-family: var(--lexend-deca);
+  font-size: var(--body-size);
+  line-height: var(--line-height-s);
+  color: var(--blue);
+}
+
+/*locations*/
+
+.locations-top {
+  width: 375px;
+  height: 160px;
+  background-image: url(../assets/images/careers-location-hero-mobile.jpg);
+  padding: 60px 32px;
+  text-align: center;
+}
+
+.main-locations {
+  padding: 72px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+}
+
+.location {
+  width: 311px;
+  height: 72px;
+  text-align: center;
+  font-family: var(--space-mono);
+  font-size: var(--title-m);
+  line-height: var(--line-height-m);
+  font-weight: var(--bold);
+  color: var(--blue);
+  letter-spacing: -1px;
+  background-color: #fcb62b42;
+  padding: 22px;
 }
