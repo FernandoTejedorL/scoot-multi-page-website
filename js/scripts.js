@@ -3,6 +3,7 @@ const hamburgerElement = document.getElementById('hamburger');
 const closeElement = document.getElementById('close');
 const menuElement = document.getElementById('menu');
 const allArrowElements = document.querySelectorAll('.accordion-arrow');
+const allAccordionTextElements = document.querySelectorAll('.accordion-box');
 
 const showMenu = () => {
   closeElement.classList.toggle('close');
@@ -13,14 +14,10 @@ hamburgerElement.addEventListener('click', showMenu);
 closeElement.addEventListener('click', showMenu);
 
 const showAccordion = (event) => {
-  event.target.classList.toggle('arrow-turn');
-  console.dir(
-    event.target.parentElement.parentElement.children[1].classList.toggle(
-      'accordion-hide'
-    )
-  );
+  event.target.children[1].classList.toggle('arrow-turn');
+  event.target.nextElementSibling.classList.toggle('accordion-hide');
 };
 
-allArrowElements.forEach((arrow) => {
-  arrow.addEventListener('click', showAccordion);
+allAccordionTextElements.forEach((accordionText) => {
+  accordionText.addEventListener('click', showAccordion);
 });

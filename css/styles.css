@@ -182,6 +182,12 @@ body {
   color: var(--grey);
 }
 
+@media (hover: hover) {
+  .menu-link:hover {
+    color: var(--yellow);
+  }
+}
+
 .button {
   display: inline-block;
   width: 180px;
@@ -210,6 +216,15 @@ body {
 @media screen and (width>1024px) {
   .menu-button {
     margin-left: 511px;
+  }
+}
+
+@media (hover: hover) {
+  .button:hover {
+    border: 2px solid var(--yellow);
+    background-color: #fff;
+    color: var(--yellow);
+    padding: 12px;
   }
 }
 
@@ -883,6 +898,12 @@ body {
   color: var(--grey);
 }
 
+@media (hover: hover) {
+  .footer-link:hover {
+    color: var(--yellow);
+  }
+}
+
 .social-media {
   display: flex;
   justify-content: space-between;
@@ -899,6 +920,12 @@ body {
 @media screen and (width>1024px) {
   .social-media {
     margin-left: 570px;
+  }
+}
+
+@media (hover: hover) {
+  .social-media-icon:hover {
+    filter: brightness(100);
   }
 }
 
@@ -1285,6 +1312,12 @@ body {
   background-color: var(--snow);
 }
 
+@media (hover: hover) {
+  .accordion-box:hover {
+    background-color: var(--light-yellow);
+  }
+}
+
 .accordion-header {
   font-family: var(--space-mono);
   font-size: 18px;
@@ -1330,6 +1363,10 @@ body {
   display: none;
 }
 
+.pointer-none {
+  pointer-events: none;
+}
+
 /*careers*/
 
 .careers-top {
@@ -1349,10 +1386,40 @@ body {
   }
 }
 
+@media screen and (width>1024px) {
+  .careers-top {
+    background-image: url(../assets/images/careers-locations-hero-desktop.jpg);
+    padding: 72px 165px;
+  }
+}
+
 .careers {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+@media screen and (width>1024px) {
+  .careers {
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 165px;
+  }
+  .careers-1 {
+    order: 0;
+  }
+  .careers-0 {
+    order: -1;
+  }
+}
+
+@media screen and (width>1024px) {
+  .text-short {
+    width: 445px;
+  }
+  .button-careers {
+    align-self: flex-start;
+  }
 }
 
 .description-careers-about {
@@ -1443,6 +1510,12 @@ body {
   }
 }
 
+@media screen and (width>1024px) {
+  .positions {
+    width: 1110px;
+  }
+}
+
 .each-position {
   display: flex;
   flex-direction: column;
@@ -1460,6 +1533,13 @@ body {
     align-items: center;
     width: 689px;
     padding: 34px 48px;
+  }
+}
+
+@media screen and (width>1024px) {
+  .each-position {
+    width: 1110px;
+    padding: 35px 40px;
   }
 }
 
@@ -1552,6 +1632,10 @@ body {
     gap: 72px;
     margin-left: 144px;
   }
+}
+
+.city-not-listed {
+  margin-bottom: 72px;
 }
 
 @media screen and (width>768px) {
